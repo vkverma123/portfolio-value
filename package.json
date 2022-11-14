@@ -1,0 +1,40 @@
+{
+  "name": "portfolio-report",
+  "version": "1.0.0",
+  "description": "Display Portfolio Report per USD",
+  "main": "lib/index.js",
+  "scripts": {
+    "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node -r dotenv/config' src/index.ts",
+    "ts-start": "ts-node -r dotenv/config src/index.ts",
+    "start": "node -r dotenv/config lib/index.js",
+    "build": "tsc -p ."
+  },
+  "dependencies": {
+    "async": "^3.2.1",
+    "csv-parser": "^3.0.0",
+    "decimal.js": "^10.3.1",
+    "dotenv": "^8.2.0",
+    "json2csv": "5.0.7",
+    "lodash": "^4.17.15",
+    "node-fetch": "^2.6.7",
+    "numerable": "^0.3.15",
+    "pg": "^8.2.1",
+    "winston": "^3.2.1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/async": "^3.2.7",
+    "@types/bluebird": "^3.5.30",
+    "@types/json2csv": "^5.0.3",
+    "@types/lodash": "^4.14.150",
+    "@types/node": "^13.13.5",
+    "@types/node-fetch": "^2.6.2",
+    "@types/validator": "^13.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "nodemon": "^2.0.4",
+    "prettier": "^2.5.1",
+    "ts-node": "^8.10.1",
+    "typescript": "^4.4.4"
+  }
+}
